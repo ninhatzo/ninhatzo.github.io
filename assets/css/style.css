@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2c3e50;
+    --primary-color: #e94fa3;
+    --secondary-color: #dd65a7;
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
     --dark-color: #2c3e50;
@@ -116,7 +116,7 @@ nav {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/project1.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/capa.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -170,7 +170,8 @@ nav {
 
 .about-img img {
     width: 100%;
-    max-width: 400px;
+    margin-left: 100px;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -201,6 +202,7 @@ nav {
 /* Qualification Section */
 .qualification {
     padding: 6rem 5%;
+    text-align: center;
     background: #f9f9f9;
 }
 
@@ -242,16 +244,9 @@ nav {
     text-align: center;
 }
 
-.certificates img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
 /* Projects Section */
 .projects {
     padding: 6rem 5%;
-    background: #fff;
 }
 
 .projects-container {
@@ -355,25 +350,6 @@ nav {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.contact-form button {
-    width: 100%;
 }
 
 /* Footer */
