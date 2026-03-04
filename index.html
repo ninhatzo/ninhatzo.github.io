@@ -1,135 +1,252 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
     <title>Dev Portfolio</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">Dev<span>Portfolio</span></div>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#qualification">Qualificações</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light p-3">
+            <div class="h2 ml-4">
+                Dev<span>Portfólio</span>
+            </div>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link mx-2">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link mx-2">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#qualification" class="nav-link mx-2">Qualificações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link mx-2">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link mr-5">Contato</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
-
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Olá, Eu sou <span>Ana Silveira</span></h1>
-            <h2>Estudante de análise e desenvolvimento de sistemas</h2>
-            <p>Buscando ser uma profissional Front-End, por um mundo mais moderno</p>
-           <a href="#about" class="btn"><i class="fa-solid fa-chevron-down"></i></a>
+    
+    <section id="home" class="container-fluid d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center">
+            <h1 class="display-3 text-secondary mb-5">
+                Olá, Eu sou <span class="font-weight-bold text-primary">Ana Silveira</span>
+            </h1>
+    
+            <h2 class="h3 text-secondary mb-3 my-4">
+                Estudante de Análise e Desenvolvimento de Sistemas
+            </h2>
+    
+            <p class="lead text-secondary mb-4 mt-4">
+                Buscando ser uma profissional Front-End, por um mundo mais moderno
+            </p>
+    
+            <a href="#about" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2 class="section-title">Sobre mim</h2>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="assets/img/avatar.jpg" alt="Developer Photo">
-            </div>
-            <div class="about-text">
-                <p>Sou uma estudante dedicada de Análise e Desenvolvimento de Sistemas, comprometida com o aprimoramento contínuo e buscando contribuir para o avanço tecnológico e inovação, com o objetivo de criar soluções que tornem o mundo um lugar melhor e mais moderno.</p>
-                <p>Busco o aprimoramento contínuo e a atualização constante, visando oferecer soluções de alta qualidade e excelência em meu trabalho.</p>
-                <div class="skills">
-                    <span>Html</span>
-                    <span>Css</span>
-                    <span>JavaScript</span>
-                </div>
-            </div>
-        </div>
-        <a href="#qualification" class="btn"><i class="fa-solid fa-chevron-down"></i></a>
-    </section>
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h1 class="section-title text-center text-primary my-5">Sobre mim</h2>
+    
+            <div class="row align-items-center about-container">
 
-    <section id="qualification" class="qualification">
-        <h2 class="section-title">Qualificações</h2>
-        <div class="qualification-container">
-            <div class="education">
-                <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Superior em análise e desenvolvimento de sistemas</h4>
-                        <p>UniSENAI Campus Joinville (2025-2027) - Cursando</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Curso Geração Web</h4>
-                        <p>Cebrac (2016-2018)</p>
-                    </div>
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <img src="assets/img/avatar.jpg" alt="Developer Photo" class="img-fluid rounded-circle w-50">
                 </div>
-            </div>
-            <div class="experience">
-                <h3><i class="fas fa-briefcase"></i> Experiências</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Controladora operacional - Suporte técnico</h4>
-                        <p>Ezentis e TLP Comunicações - (2021-2025)</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Aprendiz Industrial - Adminstrativo</h4>
-                        <p>Schulz S.A - (2019-2020)</p>
+    
+                <div class="col-md-8 about-text">
+                    <p>
+                        Sou uma estudante dedicada de Análise e Desenvolvimento de Sistemas, comprometida com o aprimoramento contínuo e buscando contribuir para o avanço tecnológico e inovação, com o objetivo de criar soluções que tornem o mundo um lugar melhor e mais moderno.
+                    </p>
+                    <p>
+                        Busco o aprimoramento contínuo e a atualização constante, visando oferecer soluções de alta qualidade e excelência em meu trabalho.
+                    </p>
+    
+                    <div class="skills mt-3">
+                        <span class="badge badge-primary mr-3 p-3">Html</span>
+                        <span class="badge badge-primary mr-3 p-3">Css</span>
+                        <span class="badge badge-primary mr-3 p-3">JavaScript</span>
+                        <span class="badge badge-primary p-3">Php</span>
                     </div>
                 </div>
             </div>
-        </div>
-        <a href="#projects" class="btn-experience"><i class="fa-solid fa-chevron-down"></i></a>
-    </section>
-
-     <section id="projects" class="projects">
-        <h2 class="section-title">Meus Projetos</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="assets\img\projetoFinalFrontEnd.png" alt="Projeto Front-End">
-                <h3>Projeto Final Front-End</h3>
-                <p>Um projeto feito em sala de aula sobre a trindade do Front-End, incluindo atividades feitas em sala de aula.</p>
-                <a href="projetoFrontEnd/index.html" target="_blank" class="btn">Acessar projeto</a>
-            </div>
-            <div class="project-card">
-                <img src="assets/img/construindo.jpg" alt="Projeto 2">
-                <h3>Em desenvolvimento...</h3>
-                <p>Em desenvolvimento...</p>
-                <a href="#projects" class="btn">Projeto em desenvolvimento</a>
-            </div>
-            <div class="project-card">
-                <img src="assets/img/construindo.jpg" alt="Projeto 3">
-                <h3>Em desenvolvimento...</h3>
-                <p>Em desenvolvimento...</p>
-                <a href="#projects" class="btn">Projeto em desenvolvimento</a>
+    
+            <div class="text-center mb-4">
+                <a href="#qualification" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
             </div>
         </div>
-        <a href="#contact" class="btn"><i class="fa-solid fa-chevron-down"></i></a>
     </section>
 
-    <section id="contact" class="contact">
-        <h2 class="section-title">Entre em contato</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> anac.estudantes2@gmail.com</p>
-                <div class="social-links">
-                    <a href="https://github.com/ninhatzo"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://www.linkedin.com/in/ana-carolina-da-silveira-a90339293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <section id="qualification" class="qualification pt-5">
+        <div class="container pt-5">
+            <h2 class="section-title text-primary text-center mb-4">Qualificações</h2>
+    
+            <div class="row qualification-container">
+                <!-- Formação Acadêmica -->
+                <div class="col-md-6 mb-4 text-center">
+                    <h5 class="mb-3"><i class="fas fa-graduation-cap mr-2"></i>Formação Acadêmica</h5>
+                    <div class="timeline">
+                        <div class="timeline-item mb-3 p-2 rounded">
+                            <h5 class="text-primary">Superior em Análise e Desenvolvimento de Sistemas</h5>
+                            <p class="mb-0">UniSENAI Campus Joinville (2025-2027) - Cursando</p>
+                        </div>
+                        <div class="timeline-item mb-3 p-3 rounded">
+                            <h5 class="text-primary">Curso Geração Web</h5>
+                            <p class="mb-0">Cebrac (2016-2018)</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Experiências -->
+                <div class="col-md-6 mb-4 text-center">
+                    <h5 class="mb-3"><i class="fas fa-briefcase mr-2"></i>Experiências</h5>
+                    <div class="timeline">
+                        <div class="timeline-item mb-3 p-2 rounded">
+                            <h5 class="text-primary">Atendimento - SAC</h5>
+                            <p class="mb-0">Bazam e Pichau informatica Ltda (2025-atuando)</p>
+                        </div>
+                        <div class="timeline-item mb-3 p-3 rounded">
+                            <h5 class="text-primary">Controladora Operacional - Suporte Técnico</h5>
+                            <p class="mb-0">Ezentis e TLP Comunicações (2021-2025)</p>
+                        </div>
+                        <div class="timeline-item mb-3 p-3 rounded">
+                            <h5 class="text-primary">Aprendiz Industrial - Administrativo</h5>
+                            <p class="mb-0">Schulz S.A (2019-2020)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+    
+            <div class="text-center mb-5">
+                <a href="#projects" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
         </div>
-        <a href="#home" class="btn"><i class="fa-solid fa-chevron-up"></i></a>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Dev Portfolio. Todos os direitos reservados.</p>
+    <section id="projects" class="projects py-5">
+        <div class="container">
+            <h2 class="section-title text-primary text-center mt-5 mb-3">Meus Projetos</h2>
+    
+            <div class="row projects-container">
+                <!-- Projeto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/projetoFinalFrontEnd.png" class="card-img-top" alt="Projeto Front-End">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Projeto Final Front-End</h5>
+                            <p class="card-text flex-grow-1">
+                                Um projeto sobre a trindade do Front-End.
+                            </p>
+                            <a href="projetoFrontEnd/index.html" target="_blank" class="btn btn-primary mt-auto">Acessar projeto</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Projeto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/construindo.jpg" class="card-img-top" alt="Projeto 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Em desenvolvimento...</h5>
+                            <p class="card-text flex-grow-1">Em desenvolvimento...</p>
+                            <a href="#projects" class="btn btn-primary mt-auto">Projeto em desenvolvimento</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Projeto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="assets/img/construindo.jpg" class="card-img-top" alt="Projeto 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Em desenvolvimento...</h5>
+                            <p class="card-text flex-grow-1">Em desenvolvimento...</p>
+                            <a href="#projects" class="btn btn-primary mt-auto">Projeto em desenvolvimento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Botão de scroll -->
+            <div class="text-center mb-5">
+                <a href="#contact" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact py-5">
+        <div class="container text-center">
+    
+            <h2 class="mb-5 text-primary">Entre em contato</h2>
+    
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+    
+                    <div class="mb-3">
+                        <p class="fs-5">
+                            <i class="fas fa-envelope me-2"></i>
+                            anac.estudantes2@gmail.com
+                        </p>
+                    </div>
+    
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://github.com/ninhatzo" class="btn btn-primary mr-5">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+    
+                        <a href="https://www.linkedin.com/in/ana-carolina-da-silveira-a90339293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary">
+                            <i class="fab fa-linkedin me-2"></i>LinkedIn
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#home" class="btn btn-primary btn-lg">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </a>
+            </div>
+    
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Dev Portfolio. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
-    <script src="assets/js/script.js"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
